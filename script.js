@@ -23,6 +23,18 @@ document.addEventListener('mousemove', e => {
 });
 document.addEventListener('mousedown', () => scatterSwarm());
 
+// Touch support: swarm follows the finger on mobile/tablet
+function updateFromTouch(e) {
+  if (!e.touches || e.touches.length === 0) return;
+  mouse.x = e.touches[0].clientX;
+  mouse.y = e.touches[0].clientY;
+}
+document.addEventListener('touchstart', e => {
+  updateFromTouch(e);
+  scatterSwarm();
+}, { passive: true });
+document.addEventListener('touchmove', updateFromTouch, { passive: true });
+
 class Swimmer {
   constructor() { this.reset(true); }
   reset(rand) {

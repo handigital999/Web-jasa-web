@@ -344,7 +344,7 @@
   .wedding-card-preview::after { inset: 14px; border-color: rgba(201,168,76,0.15); }
   .wc-ornament { font-size: 28px; color: var(--gold); margin-bottom: 16px; display: block; }
   .wc-invite {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 13px; font-style: italic;
     color: rgba(15,14,11,0.5); letter-spacing: 0.15em;
     text-transform: uppercase; margin-bottom: 20px;
@@ -356,7 +356,7 @@
   }
   .wc-names em { font-style: italic; color: var(--gold); }
   .wc-ampersand {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 48px; font-style: italic;
     color: var(--gold); display: block;
     line-height: 1; margin: 4px 0;
@@ -438,7 +438,7 @@
     line-height: 0.5; margin-bottom: 24px; display: block;
   }
   .testi-text {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 18px; font-style: italic;
     line-height: 1.7; color: rgba(245,240,232,0.8); margin-bottom: 28px;
   }
